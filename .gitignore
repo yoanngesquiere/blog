@@ -1,0 +1,15 @@
+*~
+._*
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.py[cod]
+output
+*.Python
+bin/
+cache/
+fabfile.py
+include/
+lib/
+Makefile
