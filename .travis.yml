@@ -6,3 +6,6 @@ install:
   - "pip install -r requirements.txt"
 script:
   - make publish github
+env:
+  global:
+    secure: "lkHLN53XtAMCdPNdplXeb/XaBHxgzj1q5aVOEOVatr740Uq59u0OMQqYcQHL9odkpXr/yLXOqL5IoqhSqKWNTzOS4SDoXBg4rgG7HyWyJFiTapoKk51wWDyksJYR66GhEZ1XgPQBzx4nH1H7JluspdlVsRTEbipAKk2W3+0tJ1w="
