@@ -12,4 +12,3 @@ cache/
 fabfile.py
 include/
 lib/
-Makefile
