@@ -30,6 +30,7 @@ SOCIAL = (('github', 'https://github.com/yoanngesquiere'),
           ('twitter', 'https://twitter.com/yoann_gesquiere'),)
 
 DEFAULT_PAGINATION = 10
+THEME = "pelican-sober"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
