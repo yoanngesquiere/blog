@@ -8,5 +8,5 @@ script:
   - make publish github
 env:
   global:
-    secure: "lgwQm4sR8LxS3DJyjdgve6JcxV1O1OX8MRxrgo9AM5LudGZEBhiL3fKXaSrA4WeRRA2h8Pp3SCE9UNTmfjm5mymU9bdHv5uTBFaMXBIwgCNsyP43g1bby2Os43GXWDrfSZsc1yX3cDJHnnAQX9ibyN8JtKTi3KmxsgprjNjlMgY="
+    secure: "C/QNO9sFFqXdjTqe4ZiKltJ/enOOWwkVjmJx9w3oVqaBuTFuk3FzqoD/pHJA/21JjYLkj1J7LvVTkECvRsYn5AFyh615Rtk5idLr39P9gBXxVLsI0V4ffEPWIeSjmdYSrpK7k0/sY9A5DnGnlDN4D5b/rgSUG/BDSahUOaTRgNw="
 
