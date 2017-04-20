@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ash's blog</title><link href="http://yoanngesquiere.github.io/blog/" rel="alternate"></link><link href="http://yoanngesquiere.github.io/blog/feeds/tipstricks.atom.xml" rel="self"></link><id>http://yoanngesquiere.github.io/blog/</id><updated>2016-04-23T13:00:00+02:00</updated><entry><title>How to know the keys pressed in Sublime Text 3</title><link href="http://yoanngesquiere.github.io/blog/how-to-know-the-keys-pressed-in-sublime-text-3.html" rel="alternate"></link><published>2016-04-23T13:00:00+02:00</published><updated>2016-04-23T13:00:00+02:00</updated><author><name>Yoann Gesquiere</name></author><id>tag:yoanngesquiere.github.io,2016-04-23:blog/how-to-know-the-keys-pressed-in-sublime-text-3.html</id><summary type="html">&lt;p&gt;In sublime Text 3, sometimes a shortcut doesn't work because the key is not well inteprated. To know what is typed and how to change the shortcut:&lt;/p&gt;
+&lt;p&gt;Open the console &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CTRL+&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then type&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sublime.log_input(True)
+sublime.log_commands(True)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Everything you type is now logged and you can modify your shortcuts&lt;/p&gt;</summary><category term="sublime text 3"></category><category term="tips"></category></entry><entry><title>How to use a global gitignore file</title><link href="http://yoanngesquiere.github.io/blog/how-to-use-a-global-gitignore-file.html" rel="alternate"></link><published>2015-01-30T20:20:00+01:00</published><updated>2015-01-30T20:20:00+01:00</updated><author><name>Yoann Gesquiere</name></author><id>tag:yoanngesquiere.github.io,2015-01-30:blog/how-to-use-a-global-gitignore-file.html</id><summary type="html">&lt;p&gt;If you want to exclude files for all your git repositories, you can use a global .gitignore file.
+It can be useful, for example, to exclude IDE projects files in all your projects without commiting them in your repositories.&lt;/p&gt;
+&lt;p&gt;To tell git you want to have a global gitignore file, just run the command&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global core.excludesfile &lt;span class="s2"&gt;&amp;quot;~/.gitignore&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then you can create the ~/.gitignore file and add lines into it.
+For example, you can run:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.project&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.gitignore
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For more information about the git configuration, see &lt;a href="http://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration"&gt;Git documentation&lt;/a&gt; website.&lt;/p&gt;</summary><category term="git"></category><category term="tips"></category></entry></feed>

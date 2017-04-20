@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>Let's try Jenkins - Ash's blog</title>	
+	<meta name="author" content="Yoann Gesquiere">
+	
+
+  <meta name="description" content="Currently, I use Travis CI for my github projects. Well, it does the job, but I wanted to try another CI. Jenkins is used where I work, so let's give it a try. I chose to use the docker version: docker pull jenkins mkdir jenkins docker run -d -p ...">
+
+
+
+	<link rel="stylesheet" href="http://yoanngesquiere.github.io/blog/theme/css/main.css" type="text/css" />
+		
+
+
+    <link href="http://yoanngesquiere.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ash's blog Atom Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	      <a href="http://yoanngesquiere.github.io/blog/feeds/all.atom.xml" rel="alternate"><img src="http://yoanngesquiere.github.io/blog/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+	      <nav class="pages">
+			  <a href="http://yoanngesquiere.github.io/blog/pages/about.html">About</a>
+	      </nav>
+		<a href="http://yoanngesquiere.github.io/blog" class="title">Ash's blog</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>Let's try Jenkins</h1>
+		
+<div class="metadata">
+  <time datetime="2017-04-20T13:00:00+02:00" pubdate>Thu 20 April 2017</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://yoanngesquiere.github.io/blog/author/yoann-gesquiere.html">Yoann Gesquiere</a>
+    </address>
+  in <a href="http://yoanngesquiere.github.io/blog/category/tools.html">Tools</a>
+<p class="tags">tagged <a href="http://yoanngesquiere.github.io/blog/tag/jenkins.html">jenkins</a>, <a href="http://yoanngesquiere.github.io/blog/tag/tips.html">tips</a></p></div>		
+		<p>Currently, I use Travis CI for my github projects. Well, it does the job, but I wanted to try another CI.<br />
+Jenkins is used where I work, so let's give it a try. </p>
+<p>I chose to use the docker version:</p>
+<div class="highlight"><pre><span></span>docker pull jenkins
+mkdir jenkins
+docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home -t jenkins
+</pre></div>
+
+
+<p>And it's on. </p>
+<p>The first page invite you to install some recommended plugins. And it's really easy to add some more in 
+<em>Manage Jenkins</em> -&gt; <em>Manage Plugins</em></p>
+<p><img alt="Jenkins plugins UI" src="http://yoanngesquiere.github.io/blog/resources/images/jenkins-plugins.png" /></p>
+<p>I installed the new UI (Blue Ocean) to use the simplified pipeline management.
+To access this new interface, just add <em>/blue</em> at the end of jenkins url.</p>
+<p>If you don't know about pipelines, just follow <a href="https://jenkins.io/doc/book/pipeline/">this link</a>.</p>
+<p>It is possible to create a pipeline in a few simple steps. First click on <em>New Pipeline</em> then follow the instructions.
+If there is no Jenkinsfile on the repository, it is possible to create one directly from jenkins UI and commit it to
+master or another branch.</p>
+<p><img alt="Jenkins pipeline creation" src="http://yoanngesquiere.github.io/blog/resources/images/jenkins-pipeline.png" /></p>
+<p>It is really simple to use.</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li ><a href="http://yoanngesquiere.github.io/blog/category/tipstricks.html">tips&tricks</a></li>
+	                <li class="active"><a href="http://yoanngesquiere.github.io/blog/category/tools.html">Tools</a></li>
+	            </ul>
+	          </nav>
+
+	            <aside>
+	            <h2>Social</h2>
+			      <ul class="social">
+				    <li><a href="https://github.com/yoanngesquiere">github</a><i></i></li>
+				    <li><a href="https://twitter.com/yoann_gesquiere">twitter</a><i></i></li>
+			      </ul>
+			    </aside>
+
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                  <li><a href="http://getpelican.com/">Pelican</a></li>
+	                  <li><a href="http://python.org/">Python.org</a></li>
+	                  <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	                  <li><a href="#">You can modify those links in your config file</a></li>
+	              </ul>
+	            </aside>
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  Yoann Gesquiere - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
+</body>
+</html>

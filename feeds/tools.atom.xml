@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ash's blog</title><link href="http://yoanngesquiere.github.io/blog/" rel="alternate"></link><link href="http://yoanngesquiere.github.io/blog/feeds/tools.atom.xml" rel="self"></link><id>http://yoanngesquiere.github.io/blog/</id><updated>2017-04-20T13:00:00+02:00</updated><entry><title>Let's try Jenkins</title><link href="http://yoanngesquiere.github.io/blog/lets-try-jenkins.html" rel="alternate"></link><published>2017-04-20T13:00:00+02:00</published><updated>2017-04-20T13:00:00+02:00</updated><author><name>Yoann Gesquiere</name></author><id>tag:yoanngesquiere.github.io,2017-04-20:blog/lets-try-jenkins.html</id><summary type="html">&lt;p&gt;Currently, I use Travis CI for my github projects. Well, it does the job, but I wanted to try another CI.&lt;br /&gt;
+Jenkins is used where I work, so let's give it a try. &lt;/p&gt;
+&lt;p&gt;I chose to use the docker version:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker pull jenkins
+mkdir jenkins
+docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home -t jenkins
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And it's on. &lt;/p&gt;
+&lt;p&gt;The first page invite you to install some recommended plugins. And it's really easy to add some more in 
+&lt;em&gt;Manage Jenkins&lt;/em&gt; -&amp;gt; &lt;em&gt;Manage Plugins&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Jenkins plugins UI" src="http://yoanngesquiere.github.io/blog/resources/images/jenkins-plugins.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I installed the new UI (Blue Ocean) to use the simplified pipeline management.
+To access this new interface, just add &lt;em&gt;/blue&lt;/em&gt; at the end of jenkins url.&lt;/p&gt;
+&lt;p&gt;If you don't know about pipelines, just follow &lt;a href="https://jenkins.io/doc/book/pipeline/"&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is possible to create a pipeline in a few simple steps. First click on &lt;em&gt;New Pipeline&lt;/em&gt; then follow the instructions.
+If there is no Jenkinsfile on the repository, it is possible to create one directly from jenkins UI and commit it to
+master or another branch.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Jenkins pipeline creation" src="http://yoanngesquiere.github.io/blog/resources/images/jenkins-pipeline.png" /&gt;&lt;/p&gt;
+&lt;p&gt;It is really simple to use.&lt;/p&gt;</summary><category term="jenkins"></category><category term="tips"></category></entry></feed>

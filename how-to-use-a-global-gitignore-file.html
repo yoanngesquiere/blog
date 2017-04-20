@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>How to use a global gitignore file - Ash's blog</title>	
+	<meta name="author" content="Yoann Gesquiere">
+	
+
+  <meta name="description" content="If you want to exclude files for all your git repositories, you can use a global .gitignore file. It can be useful, for example, to exclude IDE projects files in all your projects without commiting them in your repositories. To tell git you want to have a global gitignore file ...">
+
+
+
+	<link rel="stylesheet" href="http://yoanngesquiere.github.io/blog/theme/css/main.css" type="text/css" />
+		
+
+
+    <link href="http://yoanngesquiere.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ash's blog Atom Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	      <a href="http://yoanngesquiere.github.io/blog/feeds/all.atom.xml" rel="alternate"><img src="http://yoanngesquiere.github.io/blog/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	    </div>
+	      <nav class="pages">
+			  <a href="http://yoanngesquiere.github.io/blog/pages/about.html">About</a>
+	      </nav>
+		<a href="http://yoanngesquiere.github.io/blog" class="title">Ash's blog</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>How to use a global gitignore file</h1>
+		
+<div class="metadata">
+  <time datetime="2015-01-30T20:20:00+01:00" pubdate>Fri 30 January 2015</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://yoanngesquiere.github.io/blog/author/yoann-gesquiere.html">Yoann Gesquiere</a>
+    </address>
+  in <a href="http://yoanngesquiere.github.io/blog/category/tipstricks.html">tips&tricks</a>
+<p class="tags">tagged <a href="http://yoanngesquiere.github.io/blog/tag/git.html">git</a>, <a href="http://yoanngesquiere.github.io/blog/tag/tips.html">tips</a></p></div>		
+		<p>If you want to exclude files for all your git repositories, you can use a global .gitignore file.
+It can be useful, for example, to exclude IDE projects files in all your projects without commiting them in your repositories.</p>
+<p>To tell git you want to have a global gitignore file, just run the command</p>
+<div class="highlight"><pre><span></span>git config --global core.excludesfile <span class="s2">&quot;~/.gitignore&quot;</span>
+</pre></div>
+
+
+<p>Then you can create the ~/.gitignore file and add lines into it.
+For example, you can run:</p>
+<div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;.project&quot;</span> &gt;&gt; ~/.gitignore
+</pre></div>
+
+
+<p>For more information about the git configuration, see <a href="http://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration">Git documentation</a> website.</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="http://yoanngesquiere.github.io/blog/category/tipstricks.html">tips&tricks</a></li>
+	                <li ><a href="http://yoanngesquiere.github.io/blog/category/tools.html">Tools</a></li>
+	            </ul>
+	          </nav>
+
+	            <aside>
+	            <h2>Social</h2>
+			      <ul class="social">
+				    <li><a href="https://github.com/yoanngesquiere">github</a><i></i></li>
+				    <li><a href="https://twitter.com/yoann_gesquiere">twitter</a><i></i></li>
+			      </ul>
+			    </aside>
+
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                  <li><a href="http://getpelican.com/">Pelican</a></li>
+	                  <li><a href="http://python.org/">Python.org</a></li>
+	                  <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	                  <li><a href="#">You can modify those links in your config file</a></li>
+	              </ul>
+	            </aside>
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  Yoann Gesquiere - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
+</body>
+</html>
