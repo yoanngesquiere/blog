@@ -21,7 +21,7 @@ And it's on.
 The first page invite you to install some recommended plugins. And it's really easy to add some more in 
 *Manage Jenkins* -> *Manage Plugins*
 
-![Jenkins plugins UI](../resources/images/jenkins-plugins.png)
+![Jenkins plugins UI]({filename}/resources/images/jenkins-plugins.png)
 
 I installed the new UI (Blue Ocean) to use the simplified pipeline management.
 To access this new interface, just add */blue* at the end of jenkins url.
@@ -32,6 +32,6 @@ It is possible to create a pipeline in a few simple steps. First click on *New P
 If there is no Jenkinsfile on the repository, it is possible to create one directly from jenkins UI and commit it to
 master or another branch.
 
-![Jenkins pipeline creation](../resources/images/jenkins-pipeline.png)
+![Jenkins pipeline creation]({filename}/resources/images/jenkins-pipeline.png)
 
 It is really simple to use.
